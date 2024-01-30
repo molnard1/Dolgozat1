@@ -17,7 +17,7 @@ jobs:
       - run: |
           cd docs
           touch .env
-          echo DOCS_BASE_URL=/Dolgozat1/docs/ >> .env
+          echo DOCS_BASE_URL=/Dolgozat1/ >> .env
       - uses: actions/setup-node@v3.8.1
       - run: |
           cd docs
