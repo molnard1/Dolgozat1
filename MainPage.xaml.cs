@@ -12,6 +12,8 @@
 
         private void OnLoginClicked(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(Username.Text) || string.IsNullOrWhiteSpace(Password.Text)) return;
+
             if (Username.Text == "a" && Password.Text == "a")
             {
                 IsValidLogin = true;
