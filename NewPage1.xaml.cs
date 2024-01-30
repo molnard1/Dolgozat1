@@ -45,7 +45,7 @@ public partial class NewPage1
     private void Insert_OnClicked(object? sender, EventArgs e)
     {
         if (string.IsNullOrWhiteSpace(Input.Text)) return;
-        Items.Insert(Items.IndexOf((UniqueString)Data.SelectedItem) + 1, new UniqueString(Input.Text));
+        Items.Insert(Items.IndexOf((UniqueString)Data.SelectedItem), new UniqueString(Input.Text));
         Input.Text = "";
     }
 

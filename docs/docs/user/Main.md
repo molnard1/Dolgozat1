@@ -8,7 +8,7 @@ A felvítel gommbal a beviteli mezőben lévő szöveget a lista végére szúrj
 
 ## Beszúrás
 
-A beszúrás gommbal a beviteli mezőben lévő szöveget a jelenleg kijelölt elem után szúrja be.
+A beszúrás gommbal a beviteli mezőben lévő szöveget a jelenleg kijelölt elem elé szúrja be.
 
 ## Törlés
 
