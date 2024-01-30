@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dolgozat1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="145"
+                Aspect="AspectFit"
+                SemanticProperties.Description="KKSZKI logo" />
+
+            <Label
+                Text="Felhasználónév"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Entry x:Name="Username" Placeholder="Felhasználónév" WidthRequest="400" />
+
+            <Label
+                Text="Jelszó"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Entry x:Name="Password" Placeholder="Jelszó" WidthRequest="400" />
+
+            <Button
+                x:Name="LoginBtn"
+                Text="Bejelentkezés"
+                WidthRequest="200"
+                SemanticProperties.Hint="Bejelentkezés gomb"
+                Clicked="OnLoginClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
