@@ -18,14 +18,14 @@
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
-            <Entry x:Name="Username" Placeholder="Felhasználónév" WidthRequest="400" />
+            <Entry x:Name="Username" Placeholder="Felhasználónév" WidthRequest="300" />
 
             <Label
                 Text="Jelszó"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
-            <Entry x:Name="Password" Placeholder="Jelszó" WidthRequest="400" />
+            <Entry x:Name="Password" Placeholder="Jelszó" WidthRequest="300" />
 
             <Button
                 x:Name="LoginBtn"
