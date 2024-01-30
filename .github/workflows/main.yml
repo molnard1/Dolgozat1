@@ -20,9 +20,10 @@ jobs:
           echo DOCS_BASE_URL=/Dolgozat1/docs/ >> .env
       - uses: actions/setup-node@v3.8.1
       - run: |
-          cd docs && npm install && cd ..
+          npm install
+          npm run build
       - uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/master'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          publish_dir: ./build
