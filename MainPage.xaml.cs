@@ -10,9 +10,13 @@
             InitializeComponent();
         }
 
-        private void OnLoginClicked(object sender, EventArgs e)
+        private async void OnLoginClicked(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(Username.Text) || string.IsNullOrWhiteSpace(Password.Text)) return;
+            if (string.IsNullOrWhiteSpace(Username.Text) || string.IsNullOrWhiteSpace(Password.Text))
+            {
+                await DisplayAlert("Figyelmeztetés", "A felhasználónév és jelszó mezők nem lehetnek üresek!", "OK");
+                return;
+            }
 
             if (Username.Text == "a" && Password.Text == "a")
             {
@@ -25,7 +29,7 @@
                 User = "Vendég";
             }
 
-            Shell.Current.GoToAsync("///NewPage1");
+            await Shell.Current.GoToAsync("///NewPage1");
         }
     }
 
