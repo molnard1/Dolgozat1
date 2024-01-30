@@ -39,12 +39,14 @@ public partial class NewPage1
     private void Add_OnClicked(object? sender, EventArgs e)
     {
         Items.Add(new UniqueString(Input.Text));
+        Input.Text = "";
     }
 
     private void Insert_OnClicked(object? sender, EventArgs e)
     {
         if (string.IsNullOrWhiteSpace(Input.Text)) return;
         Items.Insert(Items.IndexOf((UniqueString)Data.SelectedItem) + 1, new UniqueString(Input.Text));
+        Input.Text = "";
     }
 
     private void Clear_OnClicked(object? sender, EventArgs e)
